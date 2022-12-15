@@ -2,8 +2,12 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { IngresarGuard } from './ingresar.guard';
 import { NoIngresarGuard } from './no-ingresar.guard';
+import { VerAsistenciaComponent } from './curso/ver-asistencia/ver-asistencia.component';
 
 const routes: Routes = [
+  {
+    path:'Asistencia', component: VerAsistenciaComponent
+  },
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
