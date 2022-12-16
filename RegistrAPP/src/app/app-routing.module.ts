@@ -3,11 +3,10 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { IngresarGuard } from './ingresar.guard';
 import { NoIngresarGuard } from './no-ingresar.guard';
 import { VerAsistenciaComponent } from './curso/ver-asistencia/ver-asistencia.component';
+import { CursoComponent } from './curso/curso.component';
 
 const routes: Routes = [
-  {
-    path:'Asistencia', component: VerAsistenciaComponent
-  },
+
   {
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
@@ -52,10 +51,10 @@ const routes: Routes = [
     loadChildren: () => import('./generar-qr/generar-qr.module').then( m => m.GenerarQRPageModule),
     canActivate: [IngresarGuard]
   },
-  {
-    path: 'curso',
-    loadChildren: () => import('./curso/curso.module').then( m => m.CursoPageModule)
-  },
+{
+path: 'curso',
+loadChildren: () => import('./curso/curso.module').then( m => m.CursoPageModule)
+},
   {
     path: 'perfil-docente',
     loadChildren: () => import('./perfil-docente/perfil-docente.module').then( m => m.PerfilDocentePageModule)
@@ -73,8 +72,12 @@ const routes: Routes = [
     loadChildren: () => import('./login-google/login-google.module').then( m => m.LoginGooglePageModule),
     canActivate: [NoIngresarGuard]
   },
-
-
+  {
+    path:'ver-asistencia', component: VerAsistenciaComponent
+  },
+  {
+    path:'curso', component: CursoComponent
+  },
 
   
 

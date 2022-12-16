@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VerAsistenciaComponent } from './ver-asistencia/ver-asistencia.component';
 import { CursoPage } from './curso.page';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 const routes: Routes = [
@@ -15,7 +16,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [BrowserModule, RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
 export class CursoPageRoutingModule {}

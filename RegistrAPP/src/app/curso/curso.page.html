@@ -69,14 +69,14 @@
     <ion-searchbar id="buscar" (ionInput)="getItems($event)"></ion-searchbar>
 
     <ion-list>
-      <ion-item-sliding *ngFor="let curso of cursos">
+      <ion-item-sliding *ngFor="let curso of listaDeCursos">
         <ion-item>
 
 
           <ion-icon name="albums-outline" slot="start"></ion-icon>
           <ion-list>
-            <h3>Curso : {{curso.curso}}</h3>
-            <label>Profesor :{{curso.profesor}}</label>
+            <h3>Curso : {{curso.title}}</h3>
+            <label>Profesor :{{curso.author}}</label>
           </ion-list>
 
 
@@ -103,7 +103,7 @@
     </ion-fab>
   </ion-content>
 
-  <ion-button class="button button-block button-positive" [routerLink]="['ver-asistencia']">
+  <ion-button class="button button-block button-positive" [routerLink]="['/ver-asistencia']">
     Ingresar Children 1
     <ion-icon slot="end" name="home"></ion-icon>
   </ion-button>

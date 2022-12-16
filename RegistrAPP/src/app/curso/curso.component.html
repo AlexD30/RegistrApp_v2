@@ -1,0 +1,21 @@
+<p>
+  curso works!
+</p>
+
+
+<!-- <ion-list *ngFor="let curso of listaDeCursos">
+      <ion-item >
+        <ion-icon name="albums-outline" slot="start"></ion-icon>
+          <label>Profesor :{{curso.title}}</label>
+          <label> Profesor :{{curso.author}}</label>
+      </ion-item>
+</ion-list> -->
+
+<ul>
+  <li ngFor let-curso [ngForOf]="listaDeCursos">
+    {{curso.title}}
+  </li>
+</ul>
+
+
+

@@ -7,12 +7,10 @@ import { Router } from '@angular/router';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(
-    public router:Router
-  ) {
-    this.initializeApp();
+  constructor(public router:Router) {
+    // this.initializeApp();
   }
-  initializeApp() {
-    this.router.navigateByUrl('splash');
-  }
+  // initializeApp() {
+  //   this.router.navigateByUrl('splash');
+  // }
 }

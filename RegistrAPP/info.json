@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "name": "Zamurai",
+      "location": "LA",
+      "id": 2
+    },
+    {
+      "name": "Juanito",
+      "location": "Chile",
+      "id": 6
+    }]
+
+}

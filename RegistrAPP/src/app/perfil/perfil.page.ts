@@ -54,6 +54,7 @@ export class PerfilPage implements OnInit {
     res.present()
     setTimeout("location.href='/login'", 3000);
     localStorage.removeItem('ingresado');
+    localStorage.removeItem('id');
     let secionIniciada = JSON.parse(localStorage.getItem('ingresado'));
     console.log(false)
   }

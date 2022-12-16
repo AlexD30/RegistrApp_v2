@@ -52,12 +52,12 @@ export class LoginPage implements OnInit {
     })
   }
   
-  getPosts() { //llamamos a la funcion getPost de nuestro servicio.
-    this.api.getPosts()
-    .then(data => {
-      this.arrayPosts = data;
-    });
-  }
+  // getPosts() { //llamamos a la funcion getPost de nuestro servicio.
+  //   this.api.getPosts()
+  //   .then(data => {
+  //     this.arrayPosts = data;
+  //   });
+  // }
   
   async ingresar() {
     
